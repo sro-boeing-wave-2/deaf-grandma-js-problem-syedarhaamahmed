@@ -8,6 +8,9 @@
  * @param {number} max maxValue to be included in the range
  * @returns {number}
  */
-const getRandomValue = () => {};
+const getRandomValue = (min, max) => {
+  const RandomNumber = Math.floor(Math.random() * (max - min)) + min;
+  return RandomNumber;
+};
 
 module.exports = getRandomValue;
